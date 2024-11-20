@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood-Driven Website Theme Changer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Change the Website Theme Based on Your Mood</h1>
+
+        <!-- Mood Selector -->
+        <div class="mood-selector">
+            <button class="mood-btn" onclick="changeMood('happy')">Happy</button>
+            <button class="mood-btn" onclick="changeMood('sad')">Sad</button>
+            <button class="mood-btn" onclick="changeMood('angry')">Angry</button>
+            <button class="mood-btn" onclick="changeMood('relaxed')">Relaxed</button>
+        </div>
+
+        <!-- Content Area -->
+        <div class="content">
+            <p id="mood-description">Select a mood to change the theme!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

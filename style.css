@@ -1,0 +1,147 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s, color 0.5s, font-family 0.5s;
+}
+
+/* Container */
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Header */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Mood Selector */
+.mood-selector {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.mood-btn {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover Effects for Buttons */
+.mood-btn:hover {
+    transform: scale(1.1);
+}
+
+.mood-btn:focus {
+    outline: none;
+}
+
+/* Happy Mood Theme */
+.happy {
+    background-color: #ffeb3b;
+    color: #ff9800;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+.happy .mood-btn {
+    background-color: #ffeb3b;
+    color: #ff9800;
+}
+
+.happy .mood-btn:hover {
+    background-color: #ff9800;
+    color: #ffeb3b;
+}
+
+/* Sad Mood Theme */
+.sad {
+    background-color: #90caf9;
+    color: #01579b;
+    font-family: 'Arial', sans-serif;
+}
+
+.sad .mood-btn {
+    background-color: #90caf9;
+    color: #01579b;
+}
+
+.sad .mood-btn:hover {
+    background-color: #01579b;
+    color: #90caf9;
+}
+
+/* Angry Mood Theme */
+.angry {
+    background-color: #f44336;
+    color: white;
+    font-family: 'Impact', sans-serif;
+}
+
+.angry .mood-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.angry .mood-btn:hover {
+    background-color: white;
+    color: #f44336;
+}
+
+/* Relaxed Mood Theme */
+.relaxed {
+    background-color: #81c784;
+    color: #388e3c;
+    font-family: 'Verdana', sans-serif;
+}
+
+.relaxed .mood-btn {
+    background-color: #81c784;
+    color: #388e3c;
+}
+
+.relaxed .mood-btn:hover {
+    background-color: #388e3c;
+    color: #81c784;
+}
+
+/* Content Area */
+.content {
+    font-size: 1.2rem;
+    margin-top: 30px;
+    transition: opacity 0.5s;
+}
+
+#happy-description {
+    color: #ff9800;
+}
+
+#sad-description {
+    color: #01579b;
+}
+
+#angry-description {
+    color: white;
+}
+
+#relaxed-description {
+    color: #388e3c;
+}
